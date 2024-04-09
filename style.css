@@ -1,0 +1,199 @@
+/* Customize the body */
+body {
+    background-image: url('beach.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+    color: #d03206;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the container */
+.container {
+    margin-top: 100px;
+}
+
+/* Styling for the grid container */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    /* margin-right: 100px; */
+    gap: 200px; 
+    /* width: 50%; */
+}
+
+/* Styling for the left section */
+.left {
+    margin-right: 40px; 
+    flex-grow: 1;
+}
+
+/* Styling for the right section */
+.right {
+    flex-grow: 1;
+}
+
+/* Styling for the logo image */
+.logo img {
+    width: 250px; 
+    height: auto; 
+}
+
+/* Styling for headings and text */
+h2, h3, .popular-cocktails-text, .latest-cocktails-text {
+    font-family: 'Unica One', sans-serif;
+}
+
+/* Styling for text size */
+.popular-cocktails-text, .latest-cocktails-text{
+    font-size: 1.2em;
+}
+
+/* Styling for input placeholder */
+input::placeholder {
+    color: #BABABA;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Styling for the input field */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #FE633D; 
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+/* Styling for buttons */
+button {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f8491d; 
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for button hover effect */
+button:hover {
+    background-color: #FF4500; 
+}
+
+/* .ingredients{
+    width:300px;
+    height: auto;
+} */
+
+/* Styling for instruction text */
+.instructions-text{
+    display: block;
+    width: 300px;
+}
+
+/* Styling for the scrollbar */
+/* -----SCROLLBAR----- */
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #FF4500;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FE633D; /* Orange color */
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #FF4500; /* Darker shade of orange on hover */
+}
+  
+/* List Styling */
+#popular-cocktail-list,
+#latest-cocktail-list,
+#results {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for list items */
+#popular-cocktail-list li,
+#latest-cocktail-list li,
+#results li {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #FE633D;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling for list item hover effect */
+#popular-cocktail-list li:hover,
+#latest-cocktail-list li:hover,
+#results li:hover {
+  background-color: #f05005;
+  color: #f0f6f7;
+  cursor: pointer;
+}
+
+/* Styling for the cocktail image */
+.cocktail-image img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Styling for the cocktail image hover effect */
+.cocktail-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left, .right {
+        margin-right: 0;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}
+
+/* Mobile Styles (576px and below) */
+@media only screen and (max-width: 576px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    .grid-container {
+        margin-top: 50px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+
+    .cocktail-image img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.footer {
+    font-style: italic;
+    font-size: 12px;
+}  
+  
