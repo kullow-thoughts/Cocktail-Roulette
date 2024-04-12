@@ -1,9 +1,6 @@
 /* Customize the body */
 body {
-    background-image: url('beach.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%, 100%;
+    background-color: black;
     color: #d03206;
     font-family: 'DM Sans', sans-serif;
     display: flex;
