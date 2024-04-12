@@ -1,7 +1,7 @@
 /* Customize the body */
 body {
     background-color: black;
-    color: #d03206;
+    color: #f33703;
     font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,6 @@ button:hover {
         width: 200px;
     }
 }
-
 .footer {
     font-style: italic;
     font-size: 12px;
